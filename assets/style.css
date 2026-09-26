@@ -1,0 +1,60 @@
+/* Brand palette from brand/README.md. The logo's white keyline needs a dark
+   background, so the site is dark in every colour scheme. */
+:root {
+  --bg: #312E39;
+  --surface: #292935;
+  --text: #FEFFFF;
+  --muted: #B2C0C7;
+  --accent: #53E1F1;
+  --rule: #424552;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+main {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 2.5rem 1rem 3rem;
+}
+
+a { color: var(--accent); }
+
+.logo {
+  display: block;
+  width: min(100%, 26rem);
+  height: auto;
+  margin: 0 auto 1.5rem;
+}
+
+h1, h2 { line-height: 1.25; }
+h1 { font-size: 1.9rem; margin: 0 0 0.75rem; }
+h2 { font-size: 1.25rem; margin: 2rem 0 0.5rem; }
+
+.lead { font-size: 1.15rem; color: var(--muted); }
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+}
+.card h2 { margin-top: 0; }
+
+.meta { color: var(--muted); font-size: 0.95rem; }
+
+footer {
+  border-top: 1px solid var(--rule);
+  margin-top: 3rem;
+  padding-top: 1rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+footer a { margin-right: 1rem; }

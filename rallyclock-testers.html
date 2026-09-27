@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rally Clock tester guide — NitroCat Innovations</title>
+  <meta name="description" content="How to install and test Rally Clock during internal testing.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<main>
+  <p><a href="index.html">← NitroCat Innovations</a></p>
+
+  <h1>Rally Clock tester guide</h1>
+  <p class="meta">Internal testing · Android · updated September 27, 2026</p>
+
+  <p class="lead">Thanks for testing Rally Clock. It's a timing and log app for rally controls: a clock you can trust, one big button to capture cars, a log that gets handed to scoring, and trip meters for course cars.</p>
+  <p>It <strong>captures data; it doesn't score.</strong> Keep paper running alongside while you test.</p>
+
+  <h2>Installing</h2>
+  <ol>
+    <li>Open the invitation link on your Android phone and tap <strong>Become a tester</strong>, signed in with the Google account that was invited.</li>
+    <li>Follow the link to the Play Store and install it.</li>
+    <li>Updates arrive through the Play Store like any other app.</li>
+  </ol>
+  <p>Needs <strong>Android 7.0 or later</strong>. While it's in early testing, the Play Store shows it as <em>com.nitrocatinnovations.rallyclock (unreviewed)</em>; it's the same app. If you installed an earlier copy from a file, uninstall it first. That erases its logs and settings, so hand over or share anything you want to keep beforehand.</p>
+
+  <h2>What it asks for, and why</h2>
+  <p class="meta">Each is asked the first time it's needed. Refusing only turns off the feature that needs it.</p>
+  <div class="table-scroll">
+    <table>
+      <thead><tr><th>Prompt</th><th>Why</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Nearby devices</strong><br><span class="meta">Android 17 and later, at first launch</span></td><td>Finding the other devices on the same Wi-Fi or hotspot: copying the main clock, handing over logs, getting the event setup.</td></tr>
+        <tr><td><strong>Location</strong></td><td>Satellite time, and the trip meters. Your position is never stored or sent.</td></tr>
+        <tr><td><strong>Notifications</strong></td><td>The "measuring distance" notification that keeps the trip meters running with the screen off.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Before a stage</h2>
+  <ul>
+    <li><strong>Setup</strong> (in the menu): enter the event, stage and control, or tap <strong>Get setup from the event</strong> to take it from a course car. Your name and phone are optional; they go with your log to scoring.</li>
+    <li><strong>Set the clock</strong> (the clock icon, top right), in order of preference: <strong>Set clock</strong> from the internet before you leave signal; copy the main clock from another device (one device turns on <strong>This is the main clock</strong>, the others tap <strong>Copy</strong>); satellite time; or <strong>Set at top of minute</strong> by hand.</li>
+  </ul>
+  <p>Devices working the same stage should agree with each other, so set them together before you head out.</p>
+
+  <h2>Working with other devices</h2>
+  <p>The main clock, handing over logs and getting the event setup all need the devices on <strong>one Wi-Fi network or phone hotspot</strong>. It doesn't need internet: a small travel router on a power bank makes a network anywhere.</p>
+  <ul>
+    <li><strong>Hand-over:</strong> the collecting device turns on <strong>Collect logs from controls</strong> (menu → Collect logs). On a control, open the full log: a bar shows who is collecting. Tap <strong>Hand over</strong>. It copies; the control keeps everything, and handing over again only adds what's new or changed.</li>
+    <li><strong>Event setup:</strong> the course car turns on <strong>Hand this setup out</strong>; volunteers tap <strong>Get it</strong> and pick their control.</li>
+    <li>If a phone warns the Wi-Fi has no internet, choose to <strong>stay connected</strong>.</li>
+    <li>Guest and public Wi-Fi often keep devices from seeing each other; use your own router or a hotspot. Hand-overs aren't encrypted, so avoid public Wi-Fi.</li>
+  </ul>
+
+  <h2>Things to try</h2>
+  <p>Use it the way you would at an event, and try to break it.</p>
+  <ul>
+    <li><strong>Working a control:</strong> pick the control type in Setup (Start Control, Flying Finish, Stop Control, ATC, MTC and so on); the screen changes to suit it. Capture cars, add car numbers and notes, and use <strong>Void last</strong> on a mistake.</li>
+    <li><strong>Stop control:</strong> type in finish times relayed from the flying finish. <strong>No time yet</strong> records a car that left without one.</li>
+    <li><strong>Start control:</strong> the countdown to each car's minute, and the <strong>Gap between cars</strong> setting.</li>
+    <li><strong>Handing over logs,</strong> and <strong>Review what is missing</strong> on the collecting device.</li>
+    <li><strong>Lap timer</strong> (Setup → Lap Timer): START as the car first crosses the line, CAPTURE every lap, STOP on the cool-down.</li>
+    <li><strong>Trip meters</strong> (menu), on a real drive: switch measuring on; it keeps counting with the screen locked and while you use other apps. <strong>Reset</strong> takes a long press. Compare against your car's trip meter or a GPS.</li>
+    <li><strong>Calibrate</strong> (the sliders icon on Trip meters): only against an event's official odometer check, not your car's own odometer. Send us the meter's reading before calibrating, the official distance, and how close the calibrated meter lands on the next known distance.</li>
+    <li><strong>Left-handed?</strong> Setup → <strong>Controls on the left</strong>.</li>
+    <li><strong>Getting logs out:</strong> Share from the Log screen.</li>
+  </ul>
+
+  <section class="card">
+    <h2>Keeping the trip meters running</h2>
+    <ul>
+      <li><strong>Don't swipe Rally Clock away</strong> in recent apps while measuring. Switching to other apps is fine; swiping it away closes it. If that happens, it starts measuring again when you reopen it, but the distance driven in between is lost.</li>
+      <li><strong>Samsung, Xiaomi, OnePlus and some others</strong> close apps to save battery, even while measuring. Set Rally Clock's battery use to <strong>Unrestricted</strong> (Settings → Apps → Rally Clock → Battery). On Samsung, also add it to <strong>Never sleeping apps</strong> (Settings → Battery → Background usage limits).</li>
+    </ul>
+  </section>
+
+  <h2>Good to know</h2>
+  <ul>
+    <li>Trip meter calibration is new, and hasn't yet been tried against a real odometer check.</li>
+    <li>Only Android is on the Play Store. Windows and Linux versions exist; ask if you want one.</li>
+  </ul>
+
+  <h2>Reporting a problem</h2>
+  <p>Email <a href="mailto:dev@nitrocatinnovations.com">dev@nitrocatinnovations.com</a>, or leave private feedback on Rally Clock's Play Store page. Please include:</p>
+  <ul>
+    <li>your phone model and Android version;</li>
+    <li>the app version, shown at the bottom of <strong>How to use this</strong> in the app's menu;</li>
+    <li>what you did, what you expected, and what happened instead;</li>
+    <li>a screenshot if you can.</li>
+  </ul>
+  <p>For timing or log problems, attach your log: open the Log screen, then use Share. It includes your name and phone number if you entered them in Setup.</p>
+
+  <p class="meta">What you do with the app stays on your phone. See the <a href="privacy.html">privacy policy</a>.</p>
+
+  <footer>
+    <a href="index.html">Home</a>
+    <a href="privacy.html">Privacy</a>
+    <span>© 2026 NitroCat Innovations</span>
+  </footer>
+</main>
+</body>
+</html>

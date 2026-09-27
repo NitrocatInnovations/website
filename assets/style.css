@@ -58,3 +58,17 @@ footer {
   font-size: 0.9rem;
 }
 footer a { margin-right: 1rem; }
+
+/* Tables (the Rally Clock tester guide's permissions). Wide ones scroll in
+   their own box rather than pushing the page sideways on a phone. */
+.table-scroll { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; margin: 0.5rem 0 1rem; }
+th, td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.55rem 0.75rem;
+  border-bottom: 1px solid var(--rule);
+}
+th { color: var(--muted); font-weight: 600; }
+
+main li { margin: 0.35rem 0; }

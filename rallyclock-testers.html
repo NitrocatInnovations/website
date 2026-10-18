@@ -15,12 +15,13 @@
   <p><a href="index.html">← NitroCat Innovations</a></p>
 
   <h1>Rally Clock tester guide</h1>
-  <p class="meta">Internal testing · Android · updated October 6, 2026</p>
+  <p class="meta">Testing · Android, iPhone and iPad · updated October 17, 2026</p>
 
   <p class="lead">Thanks for testing Rally Clock. It's a timing and log app for rally controls: a clock you can trust, one big button to capture cars, a log that gets handed to scoring, and trip meters for course cars.</p>
   <p>It <strong>captures data; it doesn't score.</strong> If anything still sends you reaching for a pen and paper, that's what we most want to hear about.</p>
 
   <h2>Installing</h2>
+  <h3>Android</h3>
   <ol>
     <li>Open the invitation link on your Android phone and tap <strong>Become a tester</strong>, signed in with the Google account that was invited.</li>
     <li>Follow the link to the Play Store and install it.</li>
@@ -28,6 +29,13 @@
   </ol>
   <p><strong>If you see "Item not found":</strong> wait a while and try again. It can take an hour or so after you're invited before the Play Store knows you're a tester. Open the invitation link in a web browser (on a computer, or paste it into Chrome), because tapping it in the Gmail app can open the Play Store instead. And check the Play Store is using the account you were invited with (tap your picture, top right).</p>
   <p>Needs <strong>Android 7.0 or later</strong>. While it's in early testing, the Play Store shows it as <em>com.nitrocatinnovations.rallyclock (unreviewed)</em>; it's the same app. If you installed an earlier copy from a file, uninstall it first. That erases its logs and settings, so hand over or share anything you want to keep beforehand.</p>
+  <h3>iPhone and iPad</h3>
+  <ol>
+    <li>Email <a href="mailto:dev@nitrocatinnovations.com">dev@nitrocatinnovations.com</a> with the email address of your Apple Account, and we'll send you an invitation through Apple's <strong>TestFlight</strong>.</li>
+    <li>Open the invitation on your iPhone or iPad, install TestFlight when it asks, and install Rally Clock from TestFlight.</li>
+    <li>Updates arrive through TestFlight.</li>
+  </ol>
+  <p>Needs <strong>iOS or iPadOS 15 or later</strong>. The trip meters need GPS, which an iPad has only in its cellular models.</p>
 
   <h2>What it asks for, and why</h2>
   <p class="meta">Each is asked the first time it's needed. Refusing only turns off the feature that needs it.</p>
@@ -36,8 +44,9 @@
       <thead><tr><th>Prompt</th><th>Why</th></tr></thead>
       <tbody>
         <tr><td><strong>Nearby devices</strong><br><span class="meta">Android 17 and later, at first launch</span></td><td>Finding the other devices on the same Wi-Fi or hotspot: copying the main clock, handing over logs, getting the event setup.</td></tr>
-        <tr><td><strong>Location</strong></td><td>Satellite time, and the trip meters. Your position is never stored or sent.</td></tr>
-        <tr><td><strong>Notifications</strong></td><td>The "measuring distance" notification that keeps the trip meters running with the screen off.</td></tr>
+        <tr><td><strong>Local network</strong><br><span class="meta">iPhone and iPad, the first time a screen looks for other devices</span></td><td>The same: finding the other devices on the Wi-Fi or hotspot. Without it an iPhone can't copy a clock or hand over a log.</td></tr>
+        <tr><td><strong>Location</strong></td><td>The trip meters, and on Android satellite time. Your position is never stored or sent.</td></tr>
+        <tr><td><strong>Notifications</strong><br><span class="meta">Android</span></td><td>The "measuring distance" notification that keeps the trip meters running with the screen off. An iPhone shows its blue location indicator instead.</td></tr>
       </tbody>
     </table>
   </div>
@@ -45,7 +54,7 @@
   <h2>Before a stage</h2>
   <ul>
     <li><strong>Setup</strong> (in the menu): enter the event, stage and control, or tap <strong>Get setup from the event</strong> to take it from a course car. Your name and phone are optional; they go with your log to scoring.</li>
-    <li><strong>Set the clock</strong> (the clock icon, top right), in order of preference: <strong>Set clock</strong> from the internet before you leave signal; copy the main clock from another device (one device turns on <strong>This is the main clock</strong>, the others tap <strong>Copy</strong>); satellite time; or <strong>Set at top of minute</strong> by hand.</li>
+    <li><strong>Set the clock</strong> (the clock icon, top right), in order of preference: <strong>Set clock</strong> from the internet before you leave signal; copy the main clock from another device (one device turns on <strong>This is the main clock</strong>, the others tap <strong>Copy</strong>); satellite time, on Android, with a clear view of the sky; or <strong>Set at top of minute</strong> by hand.</li>
   </ul>
   <p>Devices working the same stage should agree with each other, so set them together before you head out.</p>
 
@@ -66,9 +75,10 @@
     <li><strong>Stop control:</strong> type in finish times relayed from the flying finish. <strong>No time yet</strong> records a car that left without one.</li>
     <li><strong>Start control:</strong> the countdown to each car's minute, and the <strong>Gap between cars</strong> setting. From version 0.4.7, each car gets the next free start time as you log it, shown beside the car number. <strong>Hold</strong> on the full-screen countdown to stop a start, and the car goes back in the box. For a crew late to the line, open their row and tap <strong>Started late</strong>: they get a new time, and the one they missed is kept.</li>
     <li><strong>In and Out controls</strong> (from 0.4.7): Regroup, Service and MTC each have an In and an Out. At an Out control, hand over two cars in the same minute: the second goes out on the next minute, and the app says whose minute it was.</li>
-    <li><strong>Handing over logs,</strong> and <strong>Review what is missing</strong> on the collecting device.</li>
+    <li><strong>Handing over logs,</strong> and <strong>Review what is missing</strong> on the collecting device. With an iPhone or iPad, try it to and from an Android device.</li>
     <li><strong>Lap timer</strong> (Setup → Lap Timer): START as the car first crosses the line, CAPTURE every lap, STOP on the cool-down.</li>
-    <li><strong>Trip meters</strong> (menu), on a real drive: switch measuring on; it keeps counting with the screen locked and while you use other apps. <strong>Reset</strong> takes a long press. Compare against your car's trip meter or a GPS.</li>
+    <li><strong>Satellite time</strong> (Android): outdoors, tap the line above the clock, then <strong>Check, do not change</strong> under Satellite time. It should agree with the internet time to a fraction of a second, even on a phone whose own clock is wrong. Indoors it should say it can't see the satellites; that's right, not broken.</li>
+    <li><strong>Trip meters</strong> (menu), on a real drive: switch measuring on; it keeps counting with the screen locked and while you use other apps. <strong>Reset</strong> takes a long press. Compare against your car's trip meter or a GPS, and send us both readings. Switch measuring off when the phone leaves the car: walking with it counts, and indoors some phones pick up weak satellite signals and count those too.</li>
     <li><strong>Calibrate</strong> (the sliders icon on Trip meters): only against an event's official odometer check, not your car's own odometer, and one of at least 3.1 mi (5 km). Switch measuring on before the start and leave it on the whole way: reset the meter as you pass the start, and don't switch measuring off until the check is done. Send us the meter's reading before calibrating, the official distance, and how close the calibrated meter lands on the next known distance.</li>
     <li><strong>Left-handed?</strong> Setup → <strong>Controls on the left</strong>.</li>
     <li><strong>With a keyboard</strong> (a laptop, or a tablet with one attached), from version 0.4.7: type the car number, and press <strong>Enter</strong> for the big button (CAPTURE, LOG START, or at a stop control, on to the finish time and then RECORD TIME). <strong>Space</strong> also captures where CAPTURE is the only button. <strong>Backspace</strong> and <strong>Esc</strong> correct the number, and at a stop control <strong>Tab</strong> moves between the car and the time.</li>
@@ -80,19 +90,22 @@
     <ul>
       <li><strong>Don't swipe Rally Clock away</strong> in recent apps while measuring. Switching to other apps is fine; swiping it away closes it. If that happens, it starts measuring again when you reopen it, but the distance driven in between is lost.</li>
       <li><strong>Samsung, Xiaomi, OnePlus and some others</strong> close apps to save battery, even while measuring. Set Rally Clock's battery use to <strong>Unrestricted</strong> (Settings → Apps → Rally Clock → Battery). On Samsung, also add it to <strong>Never sleeping apps</strong> (Settings → Battery → Background usage limits).</li>
+      <li><strong>iPhone and iPad:</strong> the blue location indicator shows while measuring. Don't swipe Rally Clock away there either.</li>
     </ul>
   </section>
 
   <h2>Good to know</h2>
   <ul>
     <li>Trip meter calibration is new, and hasn't yet been tried against a real odometer check.</li>
-    <li>Only Android is on the Play Store. Windows and Linux versions exist; ask if you want one.</li>
+    <li><strong>Satellite time is Android only.</strong> iPhones, iPads, Macs and Windows give apps only the device's own clock, which can't check itself, so the Clock screen says so instead. Set those from the internet, or copy the clock from another device.</li>
+    <li>On iPhone and iPad, allow <strong>Local network</strong> when asked. If you refused it, turn it on in Settings → Privacy &amp; Security → Local Network.</li>
+    <li>Android is on the Play Store, and iPhone and iPad on TestFlight. Mac, Windows and Linux versions exist; ask if you want one.</li>
   </ul>
 
   <h2>Reporting a problem</h2>
-  <p>Email <a href="mailto:dev@nitrocatinnovations.com">dev@nitrocatinnovations.com</a>, or leave private feedback on Rally Clock's Play Store page. Please include:</p>
+  <p>Email <a href="mailto:dev@nitrocatinnovations.com">dev@nitrocatinnovations.com</a>, or leave private feedback on Rally Clock's Play Store page or in TestFlight. Please include:</p>
   <ul>
-    <li>your phone model and Android version;</li>
+    <li>your phone or tablet model, and its Android or iOS version;</li>
     <li>the app version, shown at the bottom of <strong>How to use this</strong> in the app's menu;</li>
     <li>what you did, what you expected, and what happened instead;</li>
     <li>a screenshot if you can.</li>

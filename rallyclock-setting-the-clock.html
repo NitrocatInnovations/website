@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Setting the clock in Rally Clock</title>
+  <meta name="description" content="Set Rally Clock from a time server, copy one main clock to every device at a stage, or set it by hand, and read what the clock line says.">
+  <link rel="canonical" href="https://nitrocatinnovations.com/rallyclock-setting-the-clock.html">
+  <link rel="icon" href="assets/apple-touch-icon.png" type="image/png" sizes="192x192">
+  <link rel="icon" href="assets/favicon.png" type="image/png" sizes="48x48">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="NitroCat Innovations">
+  <meta property="og:title" content="Setting the clock in Rally Clock">
+  <meta property="og:description" content="Set Rally Clock from a time server, copy one main clock to every device at a stage, or set it by hand, and read what the clock line says.">
+  <meta property="og:url" content="https://nitrocatinnovations.com/rallyclock-setting-the-clock.html">
+  <meta property="og:image" content="https://nitrocatinnovations.com/assets/rallyclock-social.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<main>
+  <p><a href="rallyclock.html">← Rally Clock</a></p>
+
+  <h1>Setting the clock</h1>
+  <p class="lead">A stage time is one device's finish minus another's start, so what matters most is that the devices agree with each other. Rally Clock keeps its own clock for this, and never changes the device's.</p>
+
+  <h2>Ways to set it</h2>
+  <p>Tap the clock icon at the top right. In order of preference:</p>
+  <ol>
+    <li><strong>Set clock</strong> asks an internet time server, while you have signal. It's pool.ntp.org, unless the event's setup or <strong>Time server</strong> in Setup names another.</li>
+    <li><strong>Copy from another device</strong> takes the time from the stage's main clock (below).</li>
+    <li><strong>Satellite time</strong>, on Android only, with a clear view of the sky. iPhones, iPads, Macs and Windows give apps only the device's own clock, so set those from the internet or copy a clock.</li>
+    <li><strong>Set at top of minute</strong>, by hand, against a time you trust.</li>
+  </ol>
+  <p>Every change is written into the log, so scoring can allow for it.</p>
+
+  <h2>One main clock for the stage</h2>
+  <p>On the device that will be the main clock:</p>
+  <ol>
+    <li>Set its clock as well as you can first: <strong>Set clock</strong> while there's signal, or on Android, satellite time.</li>
+    <li>On the Clock screen, turn on <strong>This is the main clock</strong>.</li>
+  </ol>
+  <p>On every other device:</p>
+  <ol>
+    <li>On the Clock screen, under <strong>Copy from another device</strong>, the main clock appears by its control name, usually within a couple of seconds.</li>
+    <li>Tap <strong>Copy</strong>. If cars have already been timed, it asks first, because changing the clock mid-control puts earlier and later times on slightly different clocks.</li>
+    <li>The result says how far the clock moved and how closely it matched, for example "Matched SS4 · Stop: -0.119 s (±5 ms)".</li>
+  </ol>
+  <p>Do this before the devices leave for their controls, with all of them on the <a href="rallyclock-wifi-and-hotspots.html">same Wi-Fi or hotspot</a>, then turn the main clock off. The clocks keep time on their own all day, with no signal.</p>
+
+  <h2>The line at the top</h2>
+  <ul>
+    <li><strong>Tick:</strong> the clock has been set and is good.</li>
+    <li><strong>Grey question mark:</strong> nobody has checked the clock today. Ask the organizer before the first car if you can.</li>
+    <li><strong>Red warning:</strong> the device moved its own clock. Your times are still correct, so carry on and mention it to the organizer. If it says your times may be out, set the clock again.</li>
+  </ul>
+  <p>After the device restarts, the line says "Clock may have moved — check it" until you set the clock again.</p>
+
+  <h2>Checking without changing</h2>
+  <p>On Android, outdoors, tap the line above the clock, then <strong>Check, do not change</strong> under Satellite time. It should agree with internet time to a fraction of a second, even on a phone whose own clock is wrong. Indoors it says it can't see the satellites, which is expected.</p>
+
+  <nav class="guide-nav" aria-label="Rally Clock guide">
+    <h2>The Rally Clock guide</h2>
+    <ol>
+      <li><a href="rallyclock-getting-started.html">Getting started</a></li>
+      <li><a href="rallyclock-timing-a-control.html">Timing a control</a></li>
+      <li><span aria-current="page">Setting the clock</span></li>
+      <li><a href="rallyclock-handing-over-logs.html">Handing over logs</a></li>
+      <li><a href="rallyclock-for-organizers.html">For organizers</a></li>
+      <li><a href="rallyclock-wifi-and-hotspots.html">Wi-Fi and hotspots</a></li>
+      <li><a href="rallyclock-trip-meters.html">Trip meters</a></li>
+      <li><a href="rallyclock-lap-timer.html">Lap timer</a></li>
+    </ol>
+  </nav>
+
+  <footer>
+    <a href="index.html">Home</a>
+    <a href="rallyclock.html">Rally Clock</a>
+    <a href="privacy.html">Privacy</a>
+    <span>© 2026 NitroCat Innovations, LLC</span>
+  </footer>
+</main>
+</body>
+</html>

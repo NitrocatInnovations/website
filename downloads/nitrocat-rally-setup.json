@@ -1,0 +1,115 @@
+{
+  "p": "rallyclock",
+  "v": 1,
+  "t": "config",
+  "event": "NitroCat Rally",
+  "timeServer": "pool.ntp.org",
+  "startGapSeconds": 60,
+  "startInterval": 1,
+  "controls": [
+    {
+      "control": "MTC Out",
+      "role": "mainTimeControlOut"
+    },
+    {
+      "control": "ATC",
+      "stage": "SS1",
+      "role": "arrivalTimeControl"
+    },
+    {
+      "control": "Start",
+      "stage": "SS1",
+      "role": "stageStartControl"
+    },
+    {
+      "control": "Finish",
+      "stage": "SS1",
+      "role": "flyingFinish"
+    },
+    {
+      "control": "Stop",
+      "stage": "SS1",
+      "role": "stopControl"
+    },
+    {
+      "control": "ATC",
+      "stage": "SS2",
+      "role": "arrivalTimeControl"
+    },
+    {
+      "control": "Start",
+      "stage": "SS2",
+      "role": "stageStartControl"
+    },
+    {
+      "control": "Finish",
+      "stage": "SS2",
+      "role": "flyingFinish"
+    },
+    {
+      "control": "Stop",
+      "stage": "SS2",
+      "role": "stopControl"
+    },
+    {
+      "control": "Regroup In",
+      "role": "regroupingControl"
+    },
+    {
+      "control": "Regroup Out",
+      "role": "regroupOut"
+    },
+    {
+      "control": "ATC",
+      "stage": "SS3",
+      "role": "arrivalTimeControl"
+    },
+    {
+      "control": "Start",
+      "stage": "SS3",
+      "role": "stageStartControl"
+    },
+    {
+      "control": "Finish",
+      "stage": "SS3",
+      "role": "flyingFinish"
+    },
+    {
+      "control": "Stop",
+      "stage": "SS3",
+      "role": "stopControl"
+    },
+    {
+      "control": "Service In",
+      "role": "serviceControl"
+    },
+    {
+      "control": "Service Out",
+      "role": "serviceOut"
+    },
+    {
+      "control": "ATC",
+      "stage": "SS4",
+      "role": "arrivalTimeControl"
+    },
+    {
+      "control": "Start",
+      "stage": "SS4",
+      "role": "stageStartControl"
+    },
+    {
+      "control": "Finish",
+      "stage": "SS4",
+      "role": "flyingFinish"
+    },
+    {
+      "control": "Stop",
+      "stage": "SS4",
+      "role": "stopControl"
+    },
+    {
+      "control": "Rally HQ",
+      "role": "other"
+    }
+  ]
+}

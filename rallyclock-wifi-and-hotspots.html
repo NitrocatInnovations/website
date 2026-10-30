@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wi-Fi and hotspots for Rally Clock</title>
+  <meta name="description" content="Rally Clock's main clock, hand-overs and setups need devices on one Wi-Fi network or hotspot, with no internet. What to use, check and try.">
+  <link rel="canonical" href="https://nitrocatinnovations.com/rallyclock-wifi-and-hotspots.html">
+  <link rel="icon" href="assets/apple-touch-icon.png" type="image/png" sizes="192x192">
+  <link rel="icon" href="assets/favicon.png" type="image/png" sizes="48x48">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="NitroCat Innovations">
+  <meta property="og:title" content="Wi-Fi and hotspots for Rally Clock">
+  <meta property="og:description" content="Rally Clock's main clock, hand-overs and setups need devices on one Wi-Fi network or hotspot, with no internet. What to use, check and try.">
+  <meta property="og:url" content="https://nitrocatinnovations.com/rallyclock-wifi-and-hotspots.html">
+  <meta property="og:image" content="https://nitrocatinnovations.com/assets/rallyclock-social.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<main>
+  <p><a href="rallyclock.html">← Rally Clock</a></p>
+
+  <h1>Wi-Fi and hotspots</h1>
+  <p class="lead">Copying the main clock, handing over logs and getting the event setup all need one thing: the devices on the same Wi-Fi network or phone hotspot. It doesn't need internet access. The devices talk to each other directly, which is what makes it work at a control with no signal.</p>
+
+  <h2>Ways to get one</h2>
+  <ul>
+    <li><strong>A travel router</strong>, such as a GL.iNet GL-MT300N-V2 (Mango), powered from a USB power bank. It makes a Wi-Fi network wherever it is: in the sweep car, at the finish, at service or at HQ. This is the most dependable option.</li>
+    <li><strong>A phone's hotspot.</strong> One crew phone shares a hotspot and the others join it. It usually works, but try it with those phones before the event.</li>
+    <li><strong>Existing Wi-Fi</strong> at service or HQ, if it lets devices see each other (see below).</li>
+  </ul>
+
+  <h2>Check these once, before the event</h2>
+  <ul>
+    <li><strong>Device isolation off.</strong> Guest networks, hotel and public Wi-Fi, and some routers keep devices from seeing each other ("AP isolation", "client isolation", "guest mode"). With isolation on, none of this works. It's off on a GL.iNet router unless someone turns it on.</li>
+    <li><strong>"No internet" warnings.</strong> When a phone joins Wi-Fi with no internet, Android may say so and offer to disconnect. Choose to stay connected. The phone carries on using mobile data for the internet if it has any, and the Wi-Fi for Rally Clock.</li>
+    <li><strong>Android 17 and later:</strong> Rally Clock needs the <strong>Nearby devices</strong> permission. It asks at first launch, and if it was refused, the app shows a notice with an Allow button.</li>
+    <li><strong>iPhone and iPad:</strong> Rally Clock needs <strong>Local network</strong> access. iOS asks the first time a screen looks for other devices: tap Allow. If it was refused, turn it on in Settings → Privacy &amp; Security → Local Network.</li>
+    <li><strong>Windows laptops:</strong> allow Rally Clock through the firewall when Windows asks, and set the Wi-Fi network to <strong>Private</strong>, not Public (Settings → Network &amp; internet → Wi-Fi → the network). A Public network blocks other devices from reaching the laptop.</li>
+    <li>Join every device to the network once at home, so it reconnects by itself in the field.</li>
+  </ul>
+
+  <h2>If devices can't see each other</h2>
+  <ol>
+    <li><strong>Same network?</strong> Check the Wi-Fi name on both devices. A phone that dropped back to mobile data is not on the network.</li>
+    <li><strong>Is the other device offering anything?</strong> A device only appears while it's the main clock, collecting logs, or handing out a setup.</li>
+    <li><strong>Android 17:</strong> is there a notice saying it's not allowed to reach others on this Wi-Fi? Tap Allow.</li>
+    <li><strong>iPhone or iPad:</strong> is Local Network on for Rally Clock (Settings → Privacy &amp; Security → Local Network)?</li>
+    <li><strong>Windows:</strong> is the network set to Private, and was the firewall prompt allowed?</li>
+    <li><strong>Isolation:</strong> try a phone hotspot instead. If it works there, the Wi-Fi network is keeping devices apart.</li>
+    <li>Restart the app on both devices. It reopens its connection to the network when it starts.</li>
+  </ol>
+
+  <h2>For whoever runs the network</h2>
+  <p>Rally Clock uses UDP port 47801 (finding devices, and clock timing), TCP 47802 (log hand-overs) and TCP 47803 (event setups), all on the local network only. Hand-overs aren't encrypted, so use a network you control.</p>
+  <p>For the crew, <a href="rallyclock-working-together.pdf">Working together</a> (PDF) puts the network, the main clock, hand-overs and setups on a few printable pages.</p>
+
+  <nav class="guide-nav" aria-label="Rally Clock guide">
+    <h2>The Rally Clock guide</h2>
+    <ol>
+      <li><a href="rallyclock-getting-started.html">Getting started</a></li>
+      <li><a href="rallyclock-timing-a-control.html">Timing a control</a></li>
+      <li><a href="rallyclock-setting-the-clock.html">Setting the clock</a></li>
+      <li><a href="rallyclock-handing-over-logs.html">Handing over logs</a></li>
+      <li><a href="rallyclock-for-organizers.html">For organizers</a></li>
+      <li><span aria-current="page">Wi-Fi and hotspots</span></li>
+      <li><a href="rallyclock-trip-meters.html">Trip meters</a></li>
+      <li><a href="rallyclock-lap-timer.html">Lap timer</a></li>
+    </ol>
+  </nav>
+
+  <footer>
+    <a href="index.html">Home</a>
+    <a href="rallyclock.html">Rally Clock</a>
+    <a href="privacy.html">Privacy</a>
+    <span>© 2026 NitroCat Innovations, LLC</span>
+  </footer>
+</main>
+</body>
+</html>

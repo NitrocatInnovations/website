@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The public pages, for search engines. The tester guide is left out on
+     purpose: it is marked noindex. Update lastmod when a page changes. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://nitrocatinnovations.com/</loc>
+    <lastmod>2026-10-30</lastmod>
+  </url>
+  <url>
+    <loc>https://nitrocatinnovations.com/rallyclock.html</loc>
+    <lastmod>2026-10-30</lastmod>
+  </url>
+  <url>
+    <loc>https://nitrocatinnovations.com/rallyclock-getting-started.html</loc>
+    <lastmod>2026-10-30</lastmod>
+  </url>
+  <url>
+    <loc>https://nitrocatinnovations.com/rallyclock-timing-a-control.html</loc>
+    <lastmod>2026-10-30</lastmod>
+  </url>
+  <url>
+    <loc>https://nitrocatinnovations.com/rallyclock-setting-the-clock.html</loc>
+    <lastmod>2026-10-30</lastmod>
+  </url>
+  <url>
+    <loc>https://nitrocatinnovations.com/rallyclock-handing-over-logs.html</loc>
+    <lastmod>2026-10-30</lastmod>
+  </url>
+  <url>
+    <loc>https://nitrocatinnovations.com/rallyclock-for-organizers.html</loc>
+    <lastmod>2026-10-30</lastmod>
+  </url>
+  <url>
+    <loc>https://nitrocatinnovations.com/rallyclock-wifi-and-hotspots.html</loc>
+    <lastmod>2026-10-30</lastmod>
+  </url>
+  <url>
+    <loc>https://nitrocatinnovations.com/rallyclock-trip-meters.html</loc>
+    <lastmod>2026-10-30</lastmod>
+  </url>
+  <url>
+    <loc>https://nitrocatinnovations.com/rallyclock-lap-timer.html</loc>
+    <lastmod>2026-10-30</lastmod>
+  </url>
+  <url>
+    <loc>https://nitrocatinnovations.com/privacy.html</loc>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://nitrocatinnovations.com/rallyclock-working-together.pdf</loc>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+</urlset>

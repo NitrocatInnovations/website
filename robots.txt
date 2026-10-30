@@ -1,2 +1,4 @@
 User-agent: *
-Disallow: /rallyclock-working-together.pdf
+Allow: /
+
+Sitemap: https://nitrocatinnovations.com/sitemap.xml

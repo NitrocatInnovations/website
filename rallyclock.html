@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rally Clock — NitroCat Innovations</title>
+  <meta name="description" content="Rally Clock is a timing and log app for rally control workers: a clock you can trust, one big button to capture cars, and a log that gets to scoring without retyping a paper sheet.">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<main>
+  <p><a href="index.html">← NitroCat Innovations</a></p>
+
+  <h1>Rally Clock</h1>
+  <p class="lead">A timing and log app for rally control workers: a clock you can trust, one big button to capture cars, and a log that gets to scoring without anyone retyping a paper sheet at midnight.</p>
+
+  <p>It captures data. It doesn't score. Every row is saved on the device the moment it's written, so a flat battery loses nothing already logged. It works at the side of a road with no signal: devices talk to each other over a Wi-Fi network or phone hotspot, and nothing needs the internet.</p>
+
+  <div class="shots">
+    <img src="assets/rallyclock-1-flying-finish.png" alt="Rally Clock timing a flying finish, with nine cars logged and the clock set">
+    <img src="assets/rallyclock-2-start.png" alt="Rally Clock's start control counting down to car 125's start time">
+    <img src="assets/rallyclock-3-trip-meters.png" alt="Rally Clock's trip meters, two of them running at 75 miles an hour">
+  </div>
+
+  <h2>Get Rally Clock</h2>
+  <!-- Add each store link here as its listing goes live. -->
+  <ul>
+    <li><strong>Android</strong> — Google Play (coming soon). Needs Android 7.0 or later.</li>
+    <li><strong>iPhone and iPad</strong> — the App Store (coming soon). Needs iOS or iPadOS 15 or later.</li>
+    <li><strong>Mac</strong> — the Mac App Store (coming soon). Needs macOS 12 or later.</li>
+    <li><strong>Linux</strong> — <a href="downloads/rallyclock_1.0.0_amd64.deb">download version 1.0.0</a> (8 MB, <code>.deb</code> for 64-bit Debian and Ubuntu). See <a href="#linux">installing on Linux</a>.</li>
+    <li><strong>Windows</strong> — coming soon.</li>
+  </ul>
+  <p class="meta">Free. No account, no ads, no analytics.</p>
+
+  <section class="card">
+    <h2>What it does</h2>
+    <ul>
+      <li><strong>Times a control.</strong> Start, flying finish, stop, ATC, the in and out controls at MTC, regroup and service. Capture a car on finger-down, with a lockout so one car doesn't register twice. Void a row and it stays crossed out in its place, which is what scoring needs.</li>
+      <li><strong>Keeps one clock.</strong> Set it from an internet time server, copy another device at the stage, or set it by hand. The device's own clock is never changed, and every correction is written into the log so scoring can allow for it.</li>
+      <li><strong>Gets the logs back.</strong> Hand a log to a sweep car or HQ over a Wi-Fi network or hotspot. Handing over copies the log, so the control keeps everything. Export a spreadsheet (CSV) or data file (JSONL) when you need one.</li>
+      <li><strong>Shares the event setup.</strong> An organizer fills in the event once, a course car hands it out, and each volunteer picks their control from a list.</li>
+      <li><strong>Trip meters</strong> from GPS speed, that keep counting with the screen locked in its mount, and a <strong>lap timer</strong> for test days.</li>
+    </ul>
+  </section>
+
+  <h2 id="linux">Installing on Linux</h2>
+  <p>For 64-bit Debian and Ubuntu (and distributions based on them). Download <a href="downloads/rallyclock_1.0.0_amd64.deb">rallyclock_1.0.0_amd64.deb</a>, then in a terminal, from the folder you saved it in:</p>
+  <pre><code>sudo apt install ./rallyclock_1.0.0_amd64.deb</code></pre>
+  <p>That fetches the libraries Rally Clock needs. It adds a Rally Clock entry to your applications menu, and you can also start it by typing <code>rallyclock</code>.</p>
+  <p class="meta">To check the download, compare its SHA-256 with this one (<code>sha256sum rallyclock_1.0.0_amd64.deb</code>):<br>
+  <code>5f5a295356005d8a3c4cb8bc730e8dd197eee30f322743d0c299b31a375c6995</code></p>
+
+  <h2>Using it with a crew</h2>
+  <p>Copying the main clock, handing over logs and fetching the setup all need the devices on the same Wi-Fi network or hotspot. <a href="rallyclock-working-together.pdf">Working together</a> (PDF) explains how to set that up and what to check before an event.</p>
+
+  <h2>Support</h2>
+  <p>Questions, bug reports, or feedback from an event: <a href="mailto:dev@nitrocatinnovations.com">dev@nitrocatinnovations.com</a>.</p>
+
+  <h2>Privacy</h2>
+  <p>Your data stays on your device unless you hand it over or share it, and your position is never stored or sent. Read the <a href="privacy.html">privacy policy</a>.</p>
+
+  <footer>
+    <a href="index.html">Home</a>
+    <a href="privacy.html">Privacy</a>
+    <span>© 2026 NitroCat Innovations, LLC</span>
+  </footer>
+</main>
+</body>
+</html>
